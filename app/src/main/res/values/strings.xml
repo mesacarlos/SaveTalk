@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">SaveTalk</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="iniciar_grabacion">Iniciar grabación</string>
+    <string name="detener_grabacion">Detener grabacion</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="toast_started_rec">Servicio iniciado</string>
+    <string name="toast_stopped_rec">Servicio detenido</string>
+
+
+    <!-- Textos para los ajustes -->
+    <!-- Ajustes generales -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_boot_record">Grabar al inicio</string>
+    <string name="pref_description_boot_record">Inicia la grabación automáticamente al encender el dispositivo</string>
+
+    <string name="pref_title_save_path">Ruta de guardado</string>
+    <string name="pref_default_save_path">{storage}/SaveTalk/REC-{datetime}.aac</string>
+
+    <string name="pref_title_split_record">Trocear grabaciones</string>
+    <string name="pref_description_split_record">Corta automaticamente las grabaciones cada ciertos minutos. Pueden perderse hasta 5 segundos de grabación en el proceso.</string>
+
+    <string name="pref_title_split_time">Duracion de cada grabación (en minutos)</string>
+    <string name="pref_default_split_time">30</string>
+
+    <string name="pref_title_show_notification">Mostrar notificación</string>
+    <string name="pref_description_show_notification">Fija una notificacion mientras SaveTalk esté grabando</string>
+
+    <string name="pref_title_show_debug_toast">Mostrar información de depuración</string>
+
+    <!-- Ajustes para calidad del audio -->
+    <string name="pref_header_audio_quality">Calidad de Audio</string>
+
+    <string name="pref_title_bitrate">Bitrate de grabación (bps)</string>
+    <string name="pref_default_bitrate">320000</string>
+
+
+    <!-- Ajustes para subidas -->
+    <string name="pref_header_data_upload">FTP y Google Drive</string>
+    <string name="category_ftp">FTP</string>
+
+    <string name="pref_title_wifi_only_upload">Subida solo por WiFi</string>
+    <string name="pref_description_wifi_only_upload">Sube los ficheros de audio usando únicamente Wi-Fi</string>
+
+    <string name="pref_title_enable_notis_upload">Mostrar notificaciones</string>
+    <string name="pref_description_enable_notis_upload">Muestra notificaciones sobre el estado de la subida o errores de conexión.</string>
+
+    <string name="pref_title_upload_ftp">Subir grabaciones por FTP</string>
+
+    <string name="pref_title_borrar_despues_upload_ftp">Borrar los ficheros al subir</string>
+    <string name="pref_description_borrar_despues_upload_ftp">Elimina los audios de tu dispositivo tras subirlos a FTP</string>
+
+    <string name="pref_title_ftp_ip">Dirección IP</string>
+    <string name="pref_default_ftp_ip">192.168.1.32</string>
+
+    <string name="pref_title_ftp_port">Puerto de conexión</string>
+    <string name="pref_default_ftp_port">21</string>
+
+    <string name="pref_title_ftpclient_type">Utilizar TLS/SSL</string>
+
+    <string-array name="pref_list_ftpclient_type">
+        <item>No</item>
+        <item>TLS/SSL explicito</item>
+        <item>TLS/SSL implicito</item>
+    </string-array>
+
+    <string-array name="pref_values_ftpclient_type">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_title_ftp_username">Usuario</string>
+    <string name="pref_default_ftp_username">Administrador</string>
+
+    <string name="pref_title_ftp_passwd">Contraseña</string>
+    <string name="pref_default_ftp_passwd">neverUse1234</string>
+
+    <string name="pref_title_ftp_defpath">Ruta de guardado</string>
+    <string name="pref_default_ftp_defpath">/Audios/SaveTalk/</string>
+
+</resources>

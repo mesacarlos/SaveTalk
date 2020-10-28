@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="startup_rec"
+        android:summary="@string/pref_description_boot_record"
+        android:title="@string/pref_title_boot_record" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_save_path"
+        android:inputType="text"
+        android:key="save_path"
+        android:maxLines="1"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:title="@string/pref_title_save_path" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="show_notification"
+        android:summary="@string/pref_description_show_notification"
+        android:title="@string/pref_title_show_notification" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="show_debug_toast"
+        android:title="@string/pref_title_show_debug_toast" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="split_rec"
+        android:summary="@string/pref_description_split_record"
+        android:title="@string/pref_title_split_record" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_split_time"
+        android:dependency="split_rec"
+        android:inputType="number"
+        android:key="split_rec_time"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_split_time" />
+
+</PreferenceScreen>
